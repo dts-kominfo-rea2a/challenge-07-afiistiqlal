@@ -5,7 +5,7 @@ const promiseOutput = async (emosi) => {
   let jumlahYangEmosi = 0;
   const arrEmosi = (await promiseTheaterIXX()).concat((await promiseTheaterVGC()));
   arrEmosi.forEach(element => {(element.hasil === emosi) ? jumlahYangEmosi++ : ''});
-  return jumlahYangEmosi++;
+  return jumlahYangEmosi;
 };
 
 module.exports = {
