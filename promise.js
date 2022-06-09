@@ -8,7 +8,7 @@ const promiseOutput = async (emosi) => {
     arrEmosi.forEach(element => {(element.hasil === emosi) ? jumlahYangEmosi++ : ''});
     return jumlahYangEmosi;
   } catch (error) {
-    return error;
+    console.error(error);
   }
 };
 
